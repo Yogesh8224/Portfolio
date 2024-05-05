@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh PortFolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body" id="pdfViewer">
+             PDF will be inserted here -->
+          <!-- </div>
+          <div class="modal-footer">
+            <button id="downloadBtn">Download PDF</button>
+            <h3>Modal Footer</h3>
+          </div>
+        </div>
+      </div>
+     --> 
+    <header>
+        <nav>
+            <div class="left">
+              Yogesh Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi my name is <span class="purple">Yogesh</span>
+                <div>I am a passionate</div>
+                <div></div>
+                <span id="element"></span>
+                 <div class="button">
+                    
+                    <button class="btn" id="btn1">Download resume</button>
+                    <button class="btn">Visit Github</button>
+                 </div>
+            </div>
+            <div class="rightsection">
+                <img src="developer.jpg" alt="">
+            </div>
+        </section>
+<hr>
+        <section class="secondsection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">
+                        HTML CSS develpoer (2022 - 2023)
+                    </div>
+
+                    <div class="vetical-desc">
+                        Lorem ipsum dolor sit amet consectetur
+    
+                    </div>
+                </div>
+                <div class="vertical">                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">
+                        Java develpoer (2023 - 2023)
+                    </div>
+
+                    <div class="vetical-desc">
+                        Lorem ipsum dolor sit amet consectetur
+            
+                    </div></div>
+                <div class="vertical">                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">
+                        C++ develpoer (2023 - 2023)
+                    </div>
+
+                    <div class="vetical-desc">
+                        Lorem ipsum dolor sit amet consectetur
+                    </div></div>
+                <div class="vertical">                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">
+                        Web develpoer (2023 - 2024)
+                    </div>
+
+                    <div class="vetical-desc">
+                        Lorem ipsum dolor sit amet consectetur
+        
+                    </div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Yogi's developer PortFolio
+            </div>
+            <div class="footer-second">
+               <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+                <li>Services</li>
+               </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                    <li>Services</li>
+                   </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                    <li>Services</li>
+                   </ul>
+            </div>
+            <div class="footer-rights">www.Yogisportfolio.com | All right reserved</div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer', 'Student','Web designer'],
+          typeSpeed: 50,
+        });
+
+        document.getElementById('btn1').addEventListener('click', function() {
+  // Assuming the PDF file URL is known
+  var pdfUrl = 'syllabus.pdf';
+
+  // Open the PDF file in a new tab for download
+  window.open(pdfUrl);
+});
+
+
+//         document.getElementById('openModalBtn').addEventListener('click', function() {
+//   var modal = document.getElementById('myModal');
+//   modal.style.display = 'block';
+
+//   var pdfViewer = document.getElementById('pdfViewer');
+//   pdfViewer.innerHTML = '<embed src="abc.pdf" type="application/pdf" width="100%" height="500px" />';
+// });
+
+// document.getElementById('downloadBtn').addEventListener('click', function() {
+//   // Get the content of the modal body
+//   var modalBody = document.getElementById('pdfViewer').innerHTML;
+
+//   // Or if you want to download the PDF file
+//   // var pdfSrc = document.querySelector('#pdfViewer embed').getAttribute('src');
+//   // window.open(pdfSrc);
+
+//   // For demonstration purposes, let's pretend we are downloading the modal body content
+//   download('modal_content.html', modalBody);
+// });
+
+// document.querySelector('.close').addEventListener('click', function() {
+//   var modal = document.getElementById('myModal');
+//   modal.style.display = 'none';
+// });
+
+// function download(filename, content) {
+//   var element = document.createElement('a');
+//   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
+//   element.setAttribute('download', filename);
+
+//   element.style.display = 'none';
+//   document.body.appendChild(element);
+
+//   element.click();
+
+//   document.body.removeChild(element);
+// }
+
+
+
+      </script>
+    
+</body>
+
+</html>
